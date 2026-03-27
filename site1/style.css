@@ -7,8 +7,7 @@
 }
 
 body {
-    background-color: #f5f5dc;
-    color: white;
+    background-color: #ecf8a8;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -19,6 +18,8 @@ body {
 header {
    
     background-color: #1b5e20;
+    text-align: center;
+    justify-content: center;
     
 }
 /*botao escondido no pc*/
@@ -48,14 +49,33 @@ header {
     color: #ffd700;
 }
 
-.banner{
-    width: 200px;
+.logo{
+    width: 270px;
     height: 100px;
     object-fit: cover;
-    display:block;
-    
+    margin: 10px,auto;
+    transition: 0.3s;
+ 
 }
 
+.logo:hover{
+   filter: drop-shadow(0 0 5px #03aa03)
+           drop-shadow(0 0 10px #03aa03) 
+           drop-shadow(0 0 20px #03aa03); 
+}
+
+.img-jogo{
+    width: 400px;
+    height: 300px;
+    display: block;
+    margin: 25px;
+    border-radius: 10px;
+    transition: 0,3s;
+}
+.img-jogo:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #1b5e20;
+}
 /* Rodapé */
 footer {
     margin-top: auto;
